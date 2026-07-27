@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Abhay Kumar | Creative Web Developer & Architect</title>
+    <meta name="description" content="Portfolio of Abhay Kumar, a Full Stack Developer specializing in React, Node.js, databases, and building interactive, premium web applications." />
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo" id="nav-logo">
+          Abhay<span>Kumar</span>
+        </a>
+        
+        <nav>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+            <!-- Icon will be inserted dynamically by JS -->
+          </button>
+          
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="container hero-content">
+          <span class="hero-subtitle">Welcome to my space</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-title">Abhay Kumar</span>
+            <span id="typed-text"></span>
+          </h1>
+          <p class="hero-description">
+            I craft high-performance, responsive web applications and design beautiful user experiences from front to back.
+          </p>
+          <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">
+              View Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              Let's Talk <i data-lucide="message-square"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Skills Section -->
+      <section id="about" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>About <span class="gradient-title">Me</span></h2>
+            <p>Here is a summary of my background, philosophy, and tech stacks I specialize in.</p>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-info">
+              <h3>My Journey</h3>
+              <p class="about-text">
+                I'm a Computer Science Engineering student specializing in AI/ML at Chitkara University, currently in my third year. My work centers on building strong fundamentals in Data Structures & Algorithms and applying machine learning and cloud technologies to real-world problems.
+              </p>
+              <p class="about-text">
+                I'm Oracle Cloud Infrastructure certified as a Generative AI Professional, and Microsoft Azure certified across AI-900, DP-900, and AZ-900 — giving me a solid grounding in cloud infrastructure, data fundamentals, and applied AI services. I've also competed in Hack The Mountains 5.0, sharpening my ability to build and problem-solve under time pressure.
+              </p>
+              <p class="about-text">
+                Right now, I'm deepening my command of core DSA topics — recursion, trees, graphs, dynamic programming, and the Java Collections Framework — alongside coursework in databases, programming abstractions, and applied ML. My goal is to write code that holds up in production, not just passes an exam.
+              </p>
+              <p class="about-text">
+                I'm actively looking for AI/ML or Software Engineering internships where I can apply what I've learned to real systems, work alongside experienced engineers, and keep growing. I'm always open to connecting with recruiters, mentors, and fellow builders in the AI/ML space — feel free to reach out.
+              </p>
+              <div class="cta-group" style="margin-top: 1rem;">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#" class="btn btn-outline" id="resume-btn">
+                  Download CV <i data-lucide="download"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="skills-container" id="skills-container">
+              <!-- Dynamically populated by JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured <span class="gradient-title">Projects</span></h2>
+            <p>Explore some of the applications and solutions I have built recently.</p>
+          </div>
+          
+          <div class="filter-tabs" id="filter-tabs">
+            <!-- Dynamically populated by JS -->
+          </div>
+          
+          <div class="projects-grid" id="projects-grid">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Certificates & <span class="gradient-title">Badges</span></h2>
+            <p>Validations of my technical skills, domain expertise, and ongoing learning path.</p>
+          </div>
+          
+          <div class="cert-grid" id="cert-grid">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get in <span class="gradient-title">Touch</span></h2>
+            <p>Have an idea or a project in mind? Drop me a message, and let's collaborate.</p>
+          </div>
+          
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email Me</h4>
+                  <p>abhay3091.beai24@chitkara.edu.in</p>
+                </div>
+              </div>
+              
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <i data-lucide="linkedin"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>LinkedIn</h4>
+                  <p><a href="https://www.linkedin.com/in/abhay-kumar-a1941b266/" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 500;">abhay-kumar-a1941b266</a></p>
+                </div>
+              </div>
+              
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <p>Punjab, India</p>
+                </div>
+              </div>
+            </div>
+            
+            <form class="glass-panel contact-form" id="contact-form" novalidate>
+              <div class="form-message" id="form-message"></div>
+              
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder=" " required />
+                <label for="form-name" class="form-label">Full Name</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" placeholder=" " required />
+                <label for="form-email" class="form-label">Email Address</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="text" id="form-subject" class="form-input" placeholder=" " required />
+                <label for="form-subject" class="form-label">Subject</label>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="form-message-body" class="form-textarea" placeholder=" " required></textarea>
+                <label for="form-message-body" class="form-label">Your Message</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="justify-content: center;">
+                Send Message <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#home" class="footer-logo">
+          Abhay<span>Kumar</span>
+        </a>
+        
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/Abhaykumar3091" class="social-link-item" target="_blank" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abhay-kumar-a1941b266/" class="social-link-item" target="_blank" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:abhay3091.beai24@chitkara.edu.in" class="social-link-item" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+          </li>
+        </ul>
+        
+        <p class="copyright">
+          &copy; <span id="year"></span> Abhay Kumar. All Rights Reserved. Built with HTML, CSS, and JS.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Entry Script -->
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/index.css" />
+  </body>
+</html>
